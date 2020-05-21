@@ -132,11 +132,10 @@ body {
     z-index: 9;
     position: relative;
     max-width: 1080px;
-    margin: 15px auto 0;
+    margin: -10px auto 0;
     padding-bottom: 25px;
 }
 .all-in {
-    margin: -25px;
     padding: 25px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
     z-index: 15;
@@ -174,7 +173,11 @@ body {
 
 @media (max-width: 850px) {
     .all {
-        margin-top: 25px;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .all-in {
+        padding: 0;
     }
 }
 @media (min-width: 1080px) {
