@@ -77,7 +77,7 @@ body {
 .size-banner-image {
     text-align: center;
 }
-.size-banner-image:after {
+/*.size-banner-image:after {
     display: block;
     position: absolute;
     top: 0;
@@ -86,7 +86,7 @@ body {
     height: 100%;
     content: "";
     background-color: rgba(0, 0, 0, 0.5);
-}
+}*/
 .size-banner-img {
     /*position: absolute;
     height: auto;
@@ -96,6 +96,7 @@ body {
     width: auto;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);*/
+    max-width: 1080px;
 }
 .site-banner-title {
     position: absolute;
@@ -110,13 +111,17 @@ body {
     /*line-height: 45px;*/
     line-height: 0.9em;
     max-width: 1080px;
+    z-index: 5;
 }
 .site-banner-title-link {
     color: #fff;
 }
 .site-banner-title-link:hover {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
+}
+.site-banner-title-link .glyphicon {
+    font-size: 0.7em;
 }
 /*banner end*/
 
@@ -124,11 +129,32 @@ body {
 /*all*/
 .all {
     background-color: #fff;
-    margin-top: -10px;
     z-index: 9;
     position: relative;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+    max-width: 1080px;
+    margin: 15px auto 0;
+    padding-bottom: 25px;
+}
+.all-in {
+    margin: -25px;
     padding: 25px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+    z-index: 15;
+    position: relative;
+    background: #fff;
+}
+.site-image-wrap {
+    position: relative;
+}
+.all-in:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .site-image {
     width: 100%;
@@ -148,7 +174,7 @@ body {
 
 @media (max-width: 850px) {
     .all {
-        margin-top: 0;
+        margin-top: 25px;
     }
 }
 @media (min-width: 1080px) {
